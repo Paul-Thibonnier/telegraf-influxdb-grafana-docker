@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1556384646138,
+  "iteration": 1571234752501,
   "links": [],
   "panels": [
     {
@@ -1308,7 +1308,7 @@
       "fill": 1,
       "gridPos": {
         "h": 6,
-        "w": 8,
+        "w": 12,
         "x": 0,
         "y": 34
       },
@@ -1530,8 +1530,8 @@
       "fill": 1,
       "gridPos": {
         "h": 6,
-        "w": 8,
-        "x": 8,
+        "w": 12,
+        "x": 12,
         "y": 34
       },
       "id": 42,
@@ -1557,237 +1557,13 @@
       "renderer": "flot",
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1556384646138,
+      "repeatIteration": 1571234752501,
       "repeatPanelId": 3,
       "scopedVars": {
         "disk_name": {
           "selected": false,
-          "text": "sdb2",
-          "value": "sdb2"
-        }
-      },
-      "seriesOverrides": [],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "alias": "Used",
-          "dsType": "influxdb",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "disk",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "D",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "used"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "device",
-              "operator": "=~",
-              "value": "/^$disk_name$/"
-            }
-          ]
-        },
-        {
-          "alias": "Free",
-          "dsType": "influxdb",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "disk",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "E",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "free"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "device",
-              "operator": "=~",
-              "value": "/^$disk_name$/"
-            }
-          ]
-        },
-        {
-          "alias": "Total",
-          "dsType": "influxdb",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "disk",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "F",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "total"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "device",
-              "operator": "=~",
-              "value": "/^$disk_name$/"
-            }
-          ]
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeRegions": [],
-      "timeShift": null,
-      "title": "Disk $disk_name",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "format": "bits",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "datasource": "$Datasource",
-      "fill": 1,
-      "gridPos": {
-        "h": 6,
-        "w": 8,
-        "x": 16,
-        "y": 34
-      },
-      "id": 43,
-      "legend": {
-        "alignAsTable": false,
-        "avg": false,
-        "current": false,
-        "max": false,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": false
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "nullPointMode": "connected",
-      "paceLength": 10,
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatDirection": "h",
-      "repeatIteration": 1556384646138,
-      "repeatPanelId": 3,
-      "scopedVars": {
-        "disk_name": {
-          "selected": false,
-          "text": "sdb4",
-          "value": "sdb4"
+          "text": "sdb1",
+          "value": "sdb1"
         }
       },
       "seriesOverrides": [],
@@ -2657,7 +2433,6 @@
       {
         "allValue": null,
         "current": {
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
@@ -2714,7 +2489,7 @@
     ]
   },
   "timezone": "",
-  "title": "DashboardGpu1",
+  "title": "DashboardDefault",
   "uid": "YXKklXTik",
   "version": 1
 }
